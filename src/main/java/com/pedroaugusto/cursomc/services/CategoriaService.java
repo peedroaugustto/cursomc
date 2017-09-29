@@ -22,4 +22,9 @@ public class CategoriaService {
 		return obj;
 	}
 	
+	public void inserir(Categoria obj) {
+		obj.setId(null);
+		repo.save(obj);
+	}
+	
 }
